@@ -1,133 +1,336 @@
 package onlinelibrary.objects;
 
-public class Book{
+/**
+ * Book.
+ * 
+ * @author elpai
+ *
+ */
+public class Book {
+	/**
+	 * Author.
+	 */
+	private Author author;
+	/**
+	 * Genre.
+	 */
+	private Genre genre;
+	/**
+	 * Publisher.
+	 */
+	private Publisher publisher;
+	/**
+	 * Name.
+	 */
+	private String name;
+	/**
+	 * Content.
+	 */
+	private byte[] content;
+	/**
+	 * Page count.
+	 */
+	private Integer pageCount;
+	/**
+	 * ISBN.
+	 */
+	private String isbn;
+	/**
+	 * Published date.
+	 */
+	private Integer publishYear;
+	/**
+	 * Image.
+	 */
+	private byte[] image;
+	/**
+	 * Description.
+	 */
+	private String descr;
+	/**
+	 * Rate.
+	 */
+	private Integer rating;
+	/**
+	 * Vote count.
+	 */
+	private Long voteCount;
 
-    private Author author;
-    private Genre genre;
-    private Publisher publisher;
-    private String name;
-    private byte[] content;
-    private Integer pageCount;
-    private String isbn;
-    private Integer publishYear;
-    private byte[] image;
-    private String descr;
-    private Integer rating;
-    private Long voteCount;
+	/**
+	 * Constructor.
+	 */
+	public Book() {
+	}
 
-    public Book() {
-    }
+	/**
+	 * Constructor with params.
+	 * 
+	 * @param author
+	 *            author
+	 * @param genre
+	 *            genre
+	 * @param publisher
+	 *            publisher
+	 * @param name
+	 *            name
+	 * @param content
+	 *            content
+	 * @param pageCount
+	 *            page count
+	 * @param isbn
+	 *            isbn
+	 * @param publishYear
+	 *            publish year
+	 * @param image
+	 *            image
+	 * @param descr
+	 *            description
+	 * @param rating
+	 *            rating
+	 * @param voteCount
+	 *            vote count
+	 */
+	public Book(final Author author, final Genre genre, final Publisher publisher, final String name,
+			final byte[] content, final Integer pageCount, final String isbn, final Integer publishYear,
+			final byte[] image, final String descr, final Integer rating, final Long voteCount) {
+		this.author = author;
+		this.genre = genre;
+		this.publisher = publisher;
+		this.name = name;
+		this.content = content;
+		this.pageCount = pageCount;
+		this.isbn = isbn;
+		this.publishYear = publishYear;
+		this.image = image;
+		this.descr = descr;
+		this.rating = rating;
+		this.voteCount = voteCount;
+	}
 
+	/**
+	 * Get author.
+	 * 
+	 * @return Author
+	 */
+	public final Author getAuthor() {
+		return this.author;
+	}
 
-    public Book(Author author, Genre genre, Publisher publisher, String name, byte[] content, Integer pageCount, String isbn, Integer publishYear, byte[] image, String descr, Integer rating, Long voteCount) {
-        this.author = author;
-        this.genre = genre;
-        this.publisher = publisher;
-        this.name = name;
-        this.content = content;
-        this.pageCount = pageCount;
-        this.isbn = isbn;
-        this.publishYear = publishYear;
-        this.image = image;
-        this.descr = descr;
-        this.rating = rating;
-        this.voteCount = voteCount;
-    }
+	/**
+	 * Set author.
+	 * 
+	 * @param author
+	 */
+	public final void setAuthor(final Author author) {
+		this.author = author;
+	}
 
-    public Author getAuthor() {
-        return this.author;
-    }
+	/**
+	 * Get genre.
+	 * 
+	 * @return Genre
+	 */
+	public final Genre getGenre() {
+		return this.genre;
+	}
 
-    public void setAuthor(Author author) {
-        this.author = author;
-    }
+	/**
+	 * Set genre.
+	 * 
+	 * @param genre
+	 */
+	public final void setGenre(final Genre genre) {
+		this.genre = genre;
+	}
 
-    public Genre getGenre() {
-        return this.genre;
-    }
+	/**
+	 * Get publisher.
+	 * 
+	 * @return Publisher
+	 */
+	public final Publisher getPublisher() {
+		return this.publisher;
+	}
 
-    public void setGenre(Genre genre) {
-        this.genre = genre;
-    }
+	/**
+	 * Set publisher.
+	 * 
+	 * @param publisher
+	 *            publisher
+	 */
+	public final void setPublisher(final Publisher publisher) {
+		this.publisher = publisher;
+	}
 
-    public Publisher getPublisher() {
-        return this.publisher;
-    }
+	/**
+	 * Get name.
+	 * 
+	 * @return String
+	 */
+	public final String getName() {
+		return this.name;
+	}
 
-    public void setPublisher(Publisher publisher) {
-        this.publisher = publisher;
-    }
+	/**
+	 * Set name.
+	 * 
+	 * @param name
+	 *            name
+	 */
+	public final void setName(final String name) {
+		this.name = name;
+	}
 
-    public String getName() {
-        return this.name;
-    }
+	/**
+	 * Get content.
+	 * 
+	 * @return byte[]
+	 */
+	public final byte[] getContent() {
+		return this.content;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	/**
+	 * Set content.
+	 * 
+	 * @param content
+	 *            content
+	 */
+	public final void setContent(final byte[] content) {
+		this.content = content;
+	}
 
-    public byte[] getContent() {
-        return this.content;
-    }
+	/**
+	 * Get page count.
+	 * 
+	 * @return Integer
+	 */
+	public final Integer getPageCount() {
+		return this.pageCount;
+	}
 
-    public void setContent(byte[] content) {
-        this.content = content;
-    }
+	/**
+	 * Set page count.
+	 * 
+	 * @param pageCount
+	 *            page count
+	 */
+	public final void setPageCount(final Integer pageCount) {
+		this.pageCount = pageCount;
+	}
 
-    public Integer getPageCount() {
-        return this.pageCount;
-    }
+	/**
+	 * Get ISBN.
+	 * 
+	 * @return String
+	 */
+	public final String getIsbn() {
+		return this.isbn;
+	}
 
-    public void setPageCount(Integer pageCount) {
-        this.pageCount = pageCount;
-    }
+	/**
+	 * Set ISBN.
+	 * 
+	 * @param isbn
+	 *            isbn
+	 */
+	public final void setIsbn(final String isbn) {
+		this.isbn = isbn;
+	}
 
-    public String getIsbn() {
-        return this.isbn;
-    }
+	/**
+	 * Get publisher year.
+	 * 
+	 * @return Integer
+	 */
+	public final Integer getPublishYear() {
+		return this.publishYear;
+	}
 
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
-    }
+	/**
+	 * Set publisher year.
+	 * 
+	 * @param publishYear
+	 *            publisher year
+	 */
+	public final void setPublishYear(final Integer publishYear) {
+		this.publishYear = publishYear;
+	}
 
-    public Integer getPublishYear() {
-        return this.publishYear;
-    }
+	/**
+	 * Get image.
+	 * 
+	 * @return byte[]
+	 */
+	public final byte[] getImage() {
+		return this.image;
+	}
 
-    public void setPublishYear(Integer publishYear) {
-        this.publishYear = publishYear;
-    }
+	/**
+	 * Set image.
+	 * 
+	 * @param image
+	 *            image
+	 */
+	public final void setImage(final byte[] image) {
+		this.image = image;
+	}
 
-    public byte[] getImage() {
-        return this.image;
-    }
+	/**
+	 * Get description
+	 * 
+	 * @return String
+	 */
+	public final String getDescr() {
+		return this.descr;
+	}
 
-    public void setImage(byte[] image) {
-        this.image = image;
-    }
+	/**
+	 * Set description
+	 * 
+	 * @param descr
+	 *            description
+	 */
+	public final void setDescr(final String descr) {
+		this.descr = descr;
+	}
 
-    public String getDescr() {
-        return this.descr;
-    }
+	/**
+	 * Get rating.
+	 * 
+	 * @return Integer
+	 */
+	public final Integer getRating() {
+		return this.rating;
+	}
 
-    public void setDescr(String descr) {
-        this.descr = descr;
-    }
+	/**
+	 * Set rating.
+	 * 
+	 * @param rating
+	 *            rating
+	 */
+	public final void setRating(final Integer rating) {
+		this.rating = rating;
+	}
 
-    public Integer getRating() {
-        return this.rating;
-    }
+	/**
+	 * Get vote count.
+	 * 
+	 * @return Long
+	 */
+	public final Long getVoteCount() {
+		return this.voteCount;
+	}
 
-    public void setRating(Integer rating) {
-        this.rating = rating;
-    }
-
-    public Long getVoteCount() {
-        return this.voteCount;
-    }
-
-    public void setVoteCount(Long voteCount) {
-        this.voteCount = voteCount;
-    }
+	/**
+	 * Set vote count.
+	 * 
+	 * @param voteCount
+	 *            vote count
+	 */
+	public final void setVoteCount(final Long voteCount) {
+		this.voteCount = voteCount;
+	}
 
 }

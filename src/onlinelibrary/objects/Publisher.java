@@ -1,26 +1,55 @@
 package onlinelibrary.objects;
 
+/**
+ * Publisher.
+ * 
+ * @author elpai
+ *
+ */
 public class Publisher implements java.io.Serializable {
 
-    /**
+	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 7427700395674616996L;
+	/**
+	 * Name.
+	 */
 	private String name;
 
-    public Publisher() {
-    }
+	/**
+	 * Publisher default constructor.
+	 */
+	public Publisher() {
+	}
 
-    public Publisher(String name) {
-        this.name = name;
-    }
+	/**
+	 * Publisher constructor with params.
+	 * 
+	 * @param name
+	 *            name
+	 */
+	public Publisher(final String name) {
+		this.name = name;
+	}
 
-    public String getName() {
-        return this.name;
-    }
+	/**
+	 * Get name.
+	 * 
+	 * @return String
+	 */
+	public final String getName() {
+		return this.name;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	/**
+	 * Set name.
+	 * 
+	 * @param name
+	 *            name
+	 */
+	public final void setName(final String name) {
+		this.name = name;
+	}
 
 }

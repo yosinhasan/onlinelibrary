@@ -1,26 +1,55 @@
 package onlinelibrary.objects;
 
+/**
+ * Genre.
+ * 
+ * @author elpai
+ *
+ */
 public class Genre implements java.io.Serializable {
 
-    /**
+	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	/**
+	 * Name.
+	 */
 	private String name;
 
-    public Genre() {
-    }
+	/**
+	 * Genre.
+	 */
+	public Genre() {
+	}
 
-    public Genre(String name) {
-        this.name = name;
-    }
+	/**
+	 * Genre constructor.
+	 * 
+	 * @param name
+	 *            name
+	 */
+	public Genre(final String name) {
+		this.name = name;
+	}
 
-    public String getName() {
-        return this.name;
-    }
+	/**
+	 * Get name.
+	 * 
+	 * @return String
+	 */
+	public final String getName() {
+		return this.name;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	/**
+	 * Set name.
+	 * 
+	 * @param name
+	 *            name
+	 */
+	public final void setName(final String name) {
+		this.name = name;
+	}
 
 }
