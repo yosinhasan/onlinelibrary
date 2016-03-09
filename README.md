@@ -1,2 +1,2 @@
 # onlinelibrary
-Online library java spring primefaces jsf mvc i18n hibernate
+Online library: java ee, spring mvc, spring web-flow, spring security, primefaces, jsf,  i18n, hibernate, maven, mysql
